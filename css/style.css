@@ -17,6 +17,37 @@ html{
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
+/* theme toggler */
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+.theme-toggler::before {
+    content: '';
+    height: 10px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
+    background-color: #ffc195;
+    z-index: -1;
+    border-radius: 50%;
+}
+/* dark theme */
+.overall.dark{
+    background-color:rgb(255 245 237);
+}
+/* light theme */
+.overall{
+    background-color: rgba(255, 255, 255, 0.034);
+}
+
 /* headers */
 .heading{
     text-align: center;
@@ -110,14 +141,21 @@ header .navbar a:hover{
     color:#333;
 }
 
-.home .content h4{
-    border: 2px solid;
+.home .content a h4{
+    border: 2px solid black;
     width: 50%;
     border-radius: 28px;
     text-align: center;
     padding: 15px;
     margin-top: 17px;
     letter-spacing: 1px;
+    /* color: black; */
+}
+h4.hovere:hover {
+    background-color: #40281a;
+    color: white;
+}
+.hovere a{
     color: black;
 }
 /* banner */
@@ -214,9 +252,9 @@ section#about{
 
 .collections .box-container .box{
     flex:1 1 30rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-    border:.1rem solid rgba(0,0,0,.1);
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    border:.1rem solid rgba(0,0,0,0.1);
     position: relative;    
 }
 
@@ -368,7 +406,7 @@ section#about{
     width: 100%;
 }
 
-.contact .row form .box{
+.contact .row form .box1{
     padding:1rem;
     font-size: 1.7rem;
     color:#333;
@@ -378,9 +416,36 @@ section#about{
     margin:.7rem 0;
     width: 100%;
 }
-
-
-
+.contact .row form .box2{
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+.contact .row form .box3{
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+.contact .row form .box4{
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
 .contact .row form textarea{
     height: 15rem;
     resize: none;
